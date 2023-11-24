@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM node:slim
 
 # Create app directory
 
@@ -10,5 +10,4 @@ RUN npm install
 
 CMD ["npm", "start"]
 
-# Expose port 8000
 EXPOSE 3000
